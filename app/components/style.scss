@@ -1,0 +1,49 @@
+@import '../scss/style.scss';
+
+
+//////////////////--SOCIAL MEDIA COMPONENT--///////////////////////
+.social-media::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: $secondary;
+}
+
+/////////////////////--EMAIL COMPONENT--////////////////////////////
+.email::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: $secondary;
+}
+
+.numbered-heading{
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  white-space: nowrap;
+  color: $secondary;
+  
+  span{
+    font-family: $font-family-monospace;
+    color: $primary;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: $light-secondary;
+  }
+}
