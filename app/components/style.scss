@@ -2,23 +2,35 @@
 
 
 //////////////////--SOCIAL MEDIA COMPONENT--///////////////////////
-.social-media::after{
+.social-media{
+  .icon:hover{
+    svg{
+      color: $primary;
+    }
+  }
+  &::after{
   content: "";
   display: block;
   width: 1px;
   height: 90px;
   margin: 0px auto;
   background-color: $secondary;
+  }
 }
 
 /////////////////////--EMAIL COMPONENT--////////////////////////////
-.email::after{
+.email{
+  &::after{
   content: "";
   display: block;
   width: 1px;
   height: 90px;
   margin: 0px auto;
   background-color: $secondary;
+  }
+  .link:hover{
+    color: $primary;
+  }
 }
 
 .numbered-heading{
@@ -26,7 +38,7 @@
   -moz-box-align: center;
   align-items: center;
   position: relative;
-  margin: 10px 0px 40px;
+  margin: 50px 0px 40px;
   width: 100%;
   white-space: nowrap;
   color: $secondary;
@@ -45,5 +57,12 @@
     height: 1px;
     margin-left: 20px;
     background-color: $light-secondary;
+  }
+}
+
+
+@media all and (max-width: 1200px){
+  .social-media::after{
+    display: none;
   }
 }

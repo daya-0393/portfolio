@@ -5,16 +5,17 @@ import { faBootstrap, faCss3Alt, faHtml5, faJs, faNodeJs, faReact, faSass } from
 
 const About = () => {
   return (
-    <section className="d-flex flex-column vh-100 min-vh-100 justify-content-center" id="about" style={{maxWidth: '900px'}}>
+    <section className="section d-flex flex-column justify-content-center" id="about" style={{maxWidth: '900px'}}>
       <h2 className="numbered-heading text-start"><span className="text-primary">01. </span>About me</h2>
       <div className="row">
         <div className="col-sm-12 col-md-8 mb-5">
-          <p className="pe-3">Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest 
-            in web development started back in 2012 when I decided to try editing custom Tumblr themes — 
-            turns out hacking together a custom reblog button taught me a lot about HTML & CSS! Fast-forward 
-            to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, 
-            and a student-led design studio. My main focus these days is building accessible, inclusive products 
-            and digital experiences at Upstatement for a variety of clients.
+          <p className="pe-3">Hello! My name is Dayana, and I am a person with a lot of passions: singing, acting, and of course
+            developing digital products/experiences, to mention a few. I like the idea of doing things that are out of the ordinary, 
+            I always try to make a space on my day to day for creativity, brainstorming, and be myself in everything I do.
+            My interest in web development started back in 2017, watching the process behind a project of a group of friends that had to make 
+            a popular game in that moment called Flappy Bird. &#128513; 
+            After that I started playing with cool platforms to learn development like code_academy,
+            and finally in 2018 I decided to start my career in Web Design and Development. This year (2024), I am also venturing into the world of Digital Marketing.
           </p>
           <div className="d-flex flex-wrap mt-5 pe-3">
             <div className="me-4">
@@ -47,7 +48,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-12 col-md-4 d-flex justify-content-center">
+        <div className="col-sm-12 col-md-4 d-flex justify-content-center d-none d-md-block">
           <div style={{maxWidth: '300px', height: '300px'}}>
             <Image src={ProfileImage} className="img-fluid rounded" alt="Headshot" />
           </div>

@@ -2,8 +2,8 @@ import { noto_sans_mono } from "../fonts";
 
 const Header = () => {
   return (
-    <header className={`${noto_sans_mono.className} position-fixed w-100 start-0 top-0 py-2 px-2 px-md-5 bg-`}>
-      <nav className="navbar navbar-expand-lg">
+    <header className={`${noto_sans_mono.className} position-fixed w-100 start-0 top-0 py-2 px-2 px-md-5 bg-navy z-2`}>
+      <nav className="navbar navbar-expand-lg bg-navy">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Dayana</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,8 +14,8 @@ const Header = () => {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a className="nav-link fs-7 active" aria-current="page" href="/#about"><span className="text-primary">01. </span>About</a>
-              <a className="nav-link fs-7" href="/#projectse"><span className="text-primary">02. </span>Projects</a>
-              <a className="nav-link fs-7" href="#"><span className="text-primary">03. </span>Contact</a>
+              <a className="nav-link fs-7" href="/#projects"><span className="text-primary">02. </span>Projects</a>
+              <a className="nav-link fs-7" href="/#contact"><span className="text-primary">03. </span>Contact</a>
             </div>
           </div>
         </div>

@@ -5,8 +5,8 @@ const ProjectImageRight = ({title, description, technologies, projectImgUrl, rep
   const techList = technologies.map((technology, index) => <span className='me-3' key={index}>{technology}</span>);
 
   return (
-    <div className="row mb-5">
-      <div className='col'>
+    <div className="row mb-5 flex-column-reverse flex-md-row">
+      <div className='col-12 col-md-6'>
         <h3 className='text-secondary'>{title}</h3>
         <div className="bg-light-navy p-3" style={{ boxShadow: '0 10px 30px -15px rgba(2, 12, 27, 0.7)' }}>
           <p className='m-0'>{description}</p>
@@ -19,7 +19,7 @@ const ProjectImageRight = ({title, description, technologies, projectImgUrl, rep
           <a href='#'><IconExternal /></a>
         </div>
       </div>
-      <div className="col">
+      <div className="col-12 col-md-6">
         <div className="position-relative rounded"
           style={{
             backgroundImage: `url('${projectImgUrl}')`,
